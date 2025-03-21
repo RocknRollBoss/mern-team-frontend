@@ -9,6 +9,7 @@ import { Link } from "react-router-dom"
 
 export const Home: React.FC = () => {
   const { data } = useGetCurrentQuery()
+
   const user = useSelector(userSelector)
   return (
     <Layout>
