@@ -21,7 +21,7 @@ export const Teammate: React.FC = () => {
   const { data: teammate, isLoading } = useGetTeammateQuery(id ?? skipToken)
   const [deleteTeammate] = useDeleteTeammateMutation()
   const user = useSelector(userSelector)
-  console.log(teammate)
+
   if (isLoading) {
     return (
       <Layout>

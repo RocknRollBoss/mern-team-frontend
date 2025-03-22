@@ -1,6 +1,6 @@
 export enum ApiRoutes {
-  TEAM = "team",
+  TEAM = "/team",
   REGISTER = "auth/register",
-  LOGIN = "auth/login",
-  CURRENT = "auth/current",
+  LOGIN = "/auth/login",
+  CURRENT = "/auth/current",
 }
