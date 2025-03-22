@@ -5,7 +5,7 @@ export const baseApi = createApi({
   tagTypes: ["Team"],
   baseQuery: fetchBaseQuery({
     baseUrl: import.meta.env.VITE_BASE_API_URL,
-
+    credentials: "include",
     prepareHeaders: headers => {
       const token = localStorage.getItem("token")
       if (token) {
